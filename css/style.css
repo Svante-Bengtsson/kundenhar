@@ -1,0 +1,165 @@
+#container{
+    display:grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 10vh 90vh auto auto 20vh;
+    grid-template-areas:
+    'hd nav nav'
+    'img1 img1 img1'
+    'art1 art1 img2'
+    'img3 art2 art2'
+    'ft ft ft';
+    margin: 0%;
+    background-image: url("/img/tyngre_träningsvolym.jpg");
+    background-position: center;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+body{
+    margin: 0%;
+    overflow-x: hidden;
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+header{
+    grid-area: hd;
+    display: flex;
+    background-color: #e74c3c;
+    color: black;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    border: 10px solid;
+    border-color: #e74c3c;
+    margin: 10px;
+    border-radius: 10px;
+    
+    
+}
+
+nav{
+    display: flex;
+    grid-area: nav;
+    width: 50vw;
+    display: flex;
+    margin-left: auto;
+     
+   
+    
+
+}
+nav a {
+    background-color: #e74c3c;
+    color: black;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    /* border: 10px solid; */
+    border-color: #e74c3c;
+    margin: 10px;
+    border-radius: 10px;
+    
+
+
+
+}
+
+a:hover{
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+
+}
+.img1{
+    grid-area: img1;
+    flex: 1;
+    text-align: left;
+    text-justify: center;
+    padding-left: 5vw;
+    padding-right: 55vw;
+    padding-top: 10vw;
+}
+.img1 h1{
+    background-color:   #e74c3c;
+    padding: 0px;
+    border: 10px solid;
+    border-color: #e74c3c;
+    margin: 30px;
+    border-radius: 30px;
+    color: black;
+    font-size: 8rem;
+    
+    
+}
+.art1{
+    grid-area: art1;
+    background: #e74c3c;
+    padding: 0px;
+    border: 10px solid;
+    border-color: #e74c3c;
+    margin: 30px;
+    border-radius: 10px;
+    
+}
+.img2{
+    grid-area: img2;
+    background: #e74c3c;
+    padding: 0px;
+    border: 10px solid;
+    border-color: #e74c3c;
+    margin: 30px;
+    border-radius: 10px;
+    
+}
+.img2 img{
+    width: 100%;
+    border-radius: inherit;
+}
+
+.img3 img{
+    width: 100%;
+    border-radius: inherit;
+    
+}
+.img3{
+    grid-area: img3;
+    background: #e74c3c;
+    padding: 0px;
+    border: 10px solid;
+    border-color: #e74c3c;
+    margin: 30px;
+    border-radius: 10px;
+   
+}
+.art2{
+    grid-area: art2;
+    background: #e74c3c;
+    padding: 0px;
+    border: 10px solid;
+    border-color: #e74c3c;
+    margin: 30px;
+    border-radius: 10px;
+    
+}
+footer{
+    grid-area: ft;
+    background: grey;
+    margin-top: 5vh;
+    flex: 1;
+    text-align: center;
+    text-justify: center;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    
+}
+
+.finbild{
+    width: 100%;
+    align-self: end;
+}
