@@ -3,13 +3,14 @@
     height: 100vh;
     width: 100vw;
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 10vh 90vh 10vh auto auto 20vh;
+    grid-template-rows: 10vh 90vh 10vh auto auto 30vh 20vh;
     grid-template-areas:
     'hd nav nav'
     'img1 img1 img1'
     'tit tit tit'
     'art1 art1 img2'
     'img3 art2 art2'
+    'knapp knapp knapp'
     'ft ft ft';
     margin: 0%;
     background-image: url("/img/Bakgrund2.png");
@@ -247,4 +248,39 @@ footer{
 .finbild{
     width: 100%;
     align-self: end;
+}
+
+.knapp{
+    grid-area: knapp;
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+.knapp a{
+    background-color: #e74c3c;
+    color: black;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    /* border: 10px solid; */
+    border-color: #e74c3c;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 2rem;
+    transition: linear 0.1s;
+    text-decoration: none;
+}
+.knapp a:hover{
+    background-color: #de5b4e;
+    border-color: #de5b4e;
+    padding: 15px;
+    margin: 5px;
+    transition: linear 0.1s;
+}
+.knapp img{
+    width: 50px;
 }

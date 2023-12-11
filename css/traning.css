@@ -3,11 +3,12 @@
   height: 100vh;
   width: 100vw;
   grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 10vh 90vh auto 20vh;
+  grid-template-rows: 10vh 90vh auto 40vh 20vh;
   grid-template-areas:
   'hd nav nav'
   'img1 img1 img1'
   'cards cards cards'
+  'knapp knapp knapp'
   'ft ft ft';
   margin: 0%;
 
@@ -149,9 +150,44 @@ footer{
   align-self: end;
 }
 
+.knapp{
+  grid-area: knapp;
+  display: flex;
+  width: 50vw;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+}
+.knapp a{
+  background-color: #e74c3c;
+  color: black;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  /* border: 10px solid; */
+  border-color: #e74c3c;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 2rem;
+  transition: linear 0.1s;
+  text-decoration: none;
+}
+.knapp a:hover{
+  background-color: #de5b4e;
+  border-color: #de5b4e;
+  padding: 15px;
+  margin: 5px;
+  transition: linear 0.1s;
+}
+.knapp img{
+  width: 50px;
+}
+
 @keyframes display {
   0% {
-    transform: translateX(200px);
+    transform: translateX(2000px);
     opacity: 0;
   }
   10% {
@@ -163,11 +199,11 @@ footer{
     opacity: 1;
   }
   30% {
-    transform: translateX(-200px);
+    transform: translateX(-2000px);
     opacity: 0;
   }
   100% {
-    transform: translateX(-200px);
+    transform: translateX(-2000px);
     opacity: 0;
   }
 }
@@ -180,14 +216,20 @@ footer{
 
 .pic-ctn > img {
   position: absolute;
-  top: 20vh;
-  left: 43%; 
+  top: 15vh;
+  left: 27%; 
   transform: translateX(-50%);
   opacity: 0;
   animation: display 10s infinite;
 }
 .pic{
-  border-radius: 15px;
+  border-radius: 50px;
+  height: 80vh;
+  border: 10px;
+  border-style: solid;
+  border-color: #e74c3c;
+  
+
 }
 
 img:nth-child(2) {
