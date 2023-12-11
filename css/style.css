@@ -3,17 +3,18 @@
     height: 100vh;
     width: 100vw;
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 10vh 90vh auto auto 20vh;
+    grid-template-rows: 10vh 90vh 10vh auto auto 20vh;
     grid-template-areas:
     'hd nav nav'
     'img1 img1 img1'
+    'tit tit tit'
     'art1 art1 img2'
     'img3 art2 art2'
     'ft ft ft';
     margin: 0%;
-    background-image: url("/img/tyngre_träningsvolym.jpg");
-    background-position: center;
-    background-position: 0px 0px;
+    background-image: url("/img/Bakgrund2.png");
+    background-position: bottom;
+    background-position: 0px -100px;
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -21,7 +22,7 @@
 body{
     margin: 0%;
     overflow-x: hidden;
-    background-color: black;
+    background-color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
@@ -32,20 +33,65 @@ header{
     color: black;
     flex: 1;
     align-items: center;
-    justify-content: center;
+    justify-content: ;
     padding: 0px;
     border: 10px solid;
     border-color: #e74c3c;
     margin: 10px;
+    margin-right: auto;
+    padding-right: 0px;
     border-radius: 10px;
-    
-    
 }
+header img{
+    width: 50px;
+}
+header h2{
+    font-weight: 100;
+}
+header .logg{
+    background-color: #e74c3c;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 10px;
+    transition: linear 0.1s;
+}
+header .logg:hover{
+    background-color: #e74c3c;
+    padding: 8px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 7px;
+}
+header .reg{
+    background-color: black;
+    text-decoration: none;
+    color: #e74c3c;
+    padding: 5px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 10px;
+    transition: linear 0.1s;
+}
+header .reg:hover{
+    background-color: #black;
+    padding: 8px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 7px;
+}
+
 
 nav{
     display: flex;
     grid-area: nav;
-    width: 50vw;
+    width: 30vw;
     display: flex;
     margin-left: auto;
      
@@ -65,25 +111,33 @@ nav a {
     border-color: #e74c3c;
     margin: 10px;
     border-radius: 10px;
+    font-size: 2rem;
+    transition: linear 0.1s;
+    text-decoration: none;
     
 
 
 
 }
+nav a img{
+    width: 50px;
+}
 
-a:hover{
-    background-color: #e74c3c;
-    border-color: #e74c3c;
-
+nav a:hover{
+    background-color: #de5b4e;
+    border-color: #de5b4e;
+    padding: 15px;
+    margin: 5px;
+    transition: linear 0.1s;
 }
 .img1{
     grid-area: img1;
     flex: 1;
     text-align: left;
     text-justify: center;
-    padding-left: 5vw;
-    padding-right: 55vw;
-    padding-top: 10vw;
+    padding-left: 1.5vw;
+    padding-right: 65.5vw;
+    padding-top: 10vh;
 }
 .img1 h1{
     background-color:   #e74c3c;
@@ -94,9 +148,38 @@ a:hover{
     border-radius: 30px;
     color: black;
     font-size: 8rem;
+    margin-right: -50px;
+    
     
     
 }
+.img1 h2{
+    background-color:   #e74c3c;
+    padding: 0px;
+    padding-right: 0;
+    border: 10px solid;
+    border-color: #e74c3c;
+    margin: 30px;
+    border-radius: 15px;
+    color: black;
+    
+}
+
+.tit {
+    display: flex;
+    background: #e74c3c;
+    padding: 10px; 
+    border: 0px solid;
+    border-color: #e74c3c;
+    border-radius: 10px;
+    margin: auto;
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 2rem;
+    align-items: center; 
+}
+
 .art1{
     grid-area: art1;
     background: #e74c3c;
@@ -105,6 +188,7 @@ a:hover{
     border-color: #e74c3c;
     margin: 30px;
     border-radius: 10px;
+    font-size: 2rem;
     
 }
 .img2{
@@ -145,6 +229,7 @@ a:hover{
     border-color: #e74c3c;
     margin: 30px;
     border-radius: 10px;
+    font-size: 2rem;
     
 }
 footer{
