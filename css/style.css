@@ -2,6 +2,7 @@
     display:grid;
     height: 100vh;
     width: 100vw;
+    margin: 0%;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 10vh 90vh 10vh auto auto 30vh 20vh;
     grid-template-areas:
@@ -12,7 +13,31 @@
     'img3 art2 art2'
     'knapp knapp knapp'
     'ft ft ft';
+}
+#container1{
+    display:grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 10vh 90vh 10vh auto auto 30vh 20vh;
+    grid-template-areas:
+    'hd nav nav'
+    'txt txt txt'
+    'tit tit tit'
+    'art1 art1 img2'
+    'img3 art2 art2'
+    'knapp knapp knapp'
+    'ft ft ft';
     margin: 0%;
+    background-image: url("/img/Bakgrund.png");
+    background-position: bottom;
+    background-position: 0px 10vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.LandingPage{
+    display: grid;
     background-image: url("/img/Bakgrund2.png");
     background-position: bottom;
     background-position: 0px -100px;
@@ -20,6 +45,277 @@
     background-size: cover;
     
 }
+
+#container2{
+    display:grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 10vh 90vh 20vh 50vh 60vh 20vh;
+    grid-template-areas:
+    'hd nav nav'
+    'img1 img1 img1'
+    'tit tit tit'
+    'cards cards cards'
+    'knapp knapp knapp'
+    'ft ft ft';
+    margin: 0%;
+  
+  }
+
+
+.halsa .txt1{
+    grid-area: txt;
+    display: flex;
+    
+}
+.halsa .txt1 .textbubbla1 {
+    
+    position: relative;
+    display: inline-block;
+    border: 3px solid #e74c3c;
+    background-color: #e74c3c;
+    border-radius: 35px;
+    color: white;
+    margin-bottom:  auto;
+    margin-left: 16vw;
+    margin-top: 15vh;
+    padding: 10px;
+    font-size: 2rem;
+}
+  
+.halsa .txt1 .textbubbla1 .textbubblatext1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    opacity: 0;
+    width: 300px;
+    height: fit-content;
+    background-color: white;
+    color: black;
+    border: 5px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    padding: 5px;
+    padding-bottom: 10px;
+    position: absolute;
+    z-index: 1;
+    top: -90px;
+    left: -140%;
+    transition: opacity 0.3s ease-in-out; 
+    font-size: 1rem;
+}
+.rubrik{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+  
+.halsa .textbubbla1:hover .textbubblatext1 {
+    opacity: 1;
+}
+.halsa .txt2{
+    grid-area: txt;
+    display: flex;
+    
+}
+.halsa .txt2 .textbubbla2 {
+    
+    position: relative;
+    display: inline-block;
+    border: 3px solid #e74c3c;
+    background-color: #e74c3c;
+    border-radius: 35px;
+    color: white;
+    margin-bottom:  auto;
+    margin-left: 65vw;
+    margin-top: 40vh;
+    padding: 10px;
+    font-size: 3rem;
+}
+.halsa .txt2 .textbubbla2 .textbubblatext2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    opacity: 0;
+    width: 300px;
+    height: fit-content;
+    background-color: white;
+    color: black;
+    border: 5px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    padding: 5px;
+    padding-bottom: 10px;
+    position: absolute;
+    z-index: 1;
+    top: -85px;
+    left: -45%;
+    transition: opacity 0.3s ease-in-out; 
+    font-size: 1rem;
+}
+.halsa .textbubbla2:hover .textbubblatext2 {
+    opacity: 1;
+}
+
+
+.halsa .txt3{
+    grid-area: txt;
+    display: flex;
+    
+}
+.halsa .txt3 .textbubbla3 {
+    
+    position: relative;
+    display: inline-block;
+    border: 3px solid #e74c3c;
+    background-color: #e74c3c;
+    border-radius: 35px;
+    color: white;
+    margin-bottom:  auto;
+    margin-left: 36vw;
+    margin-top: 63vh;
+    padding: 10px;
+    font-size: 2.5rem;
+}
+.halsa .txt3 .textbubbla3 .textbubblatext3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    opacity: 0;
+    width: 300px;
+    height: fit-content;
+    background-color: white;
+    color: black;
+    border: 5px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    padding: 5px;
+    padding-bottom: 10px;
+    position: absolute;
+    z-index: 1;
+    top: -100px;
+    left: -13%;
+    transition: opacity 0.3s ease-in-out; 
+    font-size: 1rem;
+}
+.halsa .textbubbla3:hover .textbubblatext3 {
+    opacity: 1;
+}
+
+
+
+
+@keyframes display {
+    0% {
+      transform: translateX(2000px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(-2000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-2000px);
+      opacity: 0;
+    }
+}
+  
+.traning.pic-ctn {
+    grid-area: img1;
+    width: 100vw;
+    
+}
+  
+.traning .pic-ctn > img {
+    position: absolute;
+    top: 15vh;
+    left: 27%; 
+    transform: translateX(-50%);
+    opacity: 0;
+    animation: display 10s infinite;
+}
+.traning .pic{
+    border-radius: 100px;
+    height: 80vh;
+    border: 10px;
+    border-style: solid;
+    border-color: #e74c3c;
+    
+  
+}
+
+.traning img:nth-child(2) {
+    animation-delay: 2s;
+}
+.traning img:nth-child(3) {
+    animation-delay: 4s;
+}
+.traning img:nth-child(4) {
+    animation-delay: 6s;
+}
+.traning img:nth-child(5) {
+    animation-delay: 8s;
+}
+
+.cards {
+    display: flex;
+    justify-content:  space-around;
+    grid-area: cards;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .card {
+    box-shadow: 0 8px 16px 0 black;
+    border: 5px;
+    border-style: solid;
+    border-color: #e74c3c;
+    border-radius: 10px;
+    transition: 0.3s;
+    width: 15%; 
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 25px;
+    background-color: #e8e8e8;
+  }
+  .card img{
+    border-radius: 5px;
+  }
+  
+  
+  
+  
+  .card:hover {
+    background-color: white;
+    box-shadow: 0 16px 32px 0 black;
+  }
+  
+  
+  .container {
+    padding: 2px 16px;
+  }
+
+
+
+
+
+
+
+
 body{
     margin: 0%;
     overflow-x: hidden;
@@ -34,7 +330,6 @@ header{
     color: black;
     flex: 1;
     align-items: center;
-    justify-content: ;
     padding: 0px;
     border: 10px solid;
     border-color: #e74c3c;
@@ -80,10 +375,8 @@ header .reg{
     transition: linear 0.1s;
 }
 header .reg:hover{
-    background-color: #black;
+    background-color: black;
     padding: 8px;
-    border-color: black;
-    border-style: solid;
     border-radius: 10px;
     margin: 7px;
 }
@@ -111,7 +404,6 @@ nav a {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    /* border: 10px solid; */
     border-color: #e74c3c;
     margin: 10px;
     border-radius: 10px;
@@ -125,11 +417,11 @@ nav a {
 }
 nav a img{
     width: 50px;
+    padding-right: 10px;
 }
 
 nav a:hover{
     background-color: #de5b4e;
-    border-color: #de5b4e;
     padding: 15px;
     margin: 5px;
     transition: linear 0.1s;
@@ -138,7 +430,6 @@ nav a:hover{
     grid-area: img1;
     flex: 1;
     text-align: left;
-    text-justify: center;
     padding-left: 1.5vw;
     padding-right: 65.5vw;
     padding-top: 10vh;
@@ -174,7 +465,6 @@ nav a:hover{
     background: #e74c3c;
     padding: 10px; 
     border: 0px solid;
-    border-color: #e74c3c;
     border-radius: 10px;
     margin: auto;
     margin-left: 30px;
@@ -183,8 +473,22 @@ nav a:hover{
     font-size: 2rem;
     align-items: center; 
 }
+.tit1 {
+  
+    grid-area: tit;
+    background: #e74c3c;
+    padding-left: 10px; 
+    border: 0px solid;
+    border-radius: 10px;
+    width: 32vw;
+    margin-left: 55px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 2rem;
+    align-items: center; 
+  }
 
-.art1{
+.LandingPage .art1{
     grid-area: art1;
     background: #e74c3c;
     padding: 0px;
@@ -195,37 +499,7 @@ nav a:hover{
     font-size: 2rem;
     
 }
-.img2{
-    grid-area: img2;
-    background: #e74c3c;
-    padding: 0px;
-    border: 10px solid;
-    border-color: #e74c3c;
-    margin: 30px;
-    border-radius: 10px;
-    
-}
-.img2 img{
-    width: 100%;
-    border-radius: inherit;
-}
-
-.img3 img{
-    width: 100%;
-    border-radius: inherit;
-    
-}
-.img3{
-    grid-area: img3;
-    background: #e74c3c;
-    padding: 0px;
-    border: 10px solid;
-    border-color: #e74c3c;
-    margin: 30px;
-    border-radius: 10px;
-   
-}
-.art2{
+.LandingPage .art2{
     grid-area: art2;
     background: #e74c3c;
     padding: 0px;
@@ -236,13 +510,60 @@ nav a:hover{
     font-size: 2rem;
     
 }
+.halsa .art1{
+    grid-area: art1;
+    background: #e74c3c;
+    padding: 0px;
+    border: 10px solid;
+    border-color: #e74c3c;
+    margin: 30px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+.halsa .art2{
+    grid-area: art2;
+    background: #e74c3c;
+    padding: 0px;
+    border: 10px solid;
+    border-color: #e74c3c;
+    margin: 30px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.img2{
+    grid-area: img2;
+    background: #e74c3c;
+    padding: 0px;
+    border: 10px solid #e74c3c;
+    margin: 30px;
+    border-radius: 10px;
+}
+.img2 img{
+    width: 100%;
+    border-radius: inherit;
+}
+
+.img3 img{
+    width: 100%;
+    border-radius: inherit;
+}
+.img3{
+    grid-area: img3;
+    background: #e74c3c;
+    padding: 0px;
+    border: 10px solid #e74c3c;
+    margin: 30px;
+    border-radius: 10px;
+   
+}
+
 footer{
     grid-area: ft;
     background: grey;
     margin-top: 5vh;
     flex: 1;
     text-align: center;
-    text-justify: center;
     padding-left: 20vw;
     padding-right: 20vw;
     
@@ -256,7 +577,7 @@ footer{
 .knapp{
     grid-area: knapp;
     display: flex;
-    width: 50vw;
+    width: 52vw;
     justify-content: center;
     align-content: center;
     margin: auto;
@@ -269,8 +590,6 @@ footer{
     align-items: center;
     justify-content: center;
     padding: 10px;
-    /* border: 10px solid; */
-    border-color: #e74c3c;
     margin: 10px;
     border-radius: 10px;
     font-size: 2rem;
@@ -279,11 +598,11 @@ footer{
 }
 .knapp a:hover{
     background-color: #de5b4e;
-    border-color: #de5b4e;
     padding: 15px;
     margin: 5px;
     transition: linear 0.1s;
 }
 .knapp img{
     width: 50px;
+    padding-right: 10px;
 }
