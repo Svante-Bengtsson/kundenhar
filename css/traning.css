@@ -3,7 +3,7 @@
   height: 100vh;
   width: 100vw;
   grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 10vh 90vh 20vh 50vh 40vh 20vh;
+  grid-template-rows: 10vh 90vh 20vh 50vh 60vh 20vh;
   grid-template-areas:
   'hd nav nav'
   'img1 img1 img1'
@@ -13,17 +13,12 @@
   'ft ft ft';
   margin: 0%;
 
-  background-position: bottom;
-  background-position: 0px -100px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
 }
 body{
   margin: 0%;
   overflow-x: hidden;
   background-color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   
 }
 header{
@@ -156,7 +151,7 @@ footer{
 .knapp{
   grid-area: knapp;
   display: flex;
-  width: 33.5vw;
+  width: 35vw;
   justify-content: center;
   align-content: center;
   margin: auto;
@@ -176,12 +171,14 @@ footer{
   font-size: 2rem;
   transition: linear 0.1s;
   text-decoration: none;
+  margin-top: 150px;
 }
 .knapp a:hover{
   background-color: #de5b4e;
   border-color: #de5b4e;
   padding: 15px;
   margin: 5px;
+  margin-top: 145px;
   transition: linear 0.1s;
 }
 
@@ -258,7 +255,7 @@ img:nth-child(5) {
   border: 0px solid;
   border-color: #e74c3c;
   border-radius: 10px;
-  width: 28.5vw;
+  width: 32vw;
   margin-left: 55px;
   padding-top: 0px;
   padding-bottom: 0px;

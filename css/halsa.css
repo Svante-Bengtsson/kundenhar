@@ -6,16 +6,16 @@
     grid-template-rows: 10vh 90vh 10vh auto auto 30vh 20vh;
     grid-template-areas:
     'hd nav nav'
-    'img1 img1 img1'
+    'txt txt txt'
     'tit tit tit'
     'art1 art1 img2'
     'img3 art2 art2'
     'knapp knapp knapp'
     'ft ft ft';
     margin: 0%;
-    background-image: url("/img/Bakgrund2.png");
+    background-image: url("/img/Bakgrund.png");
     background-position: bottom;
-    background-position: 0px -100px;
+    background-position: 0px 80px;
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -134,54 +134,22 @@ nav a:hover{
     margin: 5px;
     transition: linear 0.1s;
 }
-.img1{
-    grid-area: img1;
-    flex: 1;
-    text-align: left;
-    text-justify: center;
-    padding-left: 1.5vw;
-    padding-right: 65.5vw;
-    padding-top: 10vh;
-}
-.img1 h1{
-    background-color:   #e74c3c;
-    padding: 0px;
-    border: 10px solid;
-    border-color: #e74c3c;
-    margin: 30px;
-    border-radius: 30px;
-    color: black;
-    font-size: 8rem;
-    margin-right: -130px;
-    
-    
-    
-}
-.img1 h2{
-    background-color:   #e74c3c;
-    padding: 0px;
-    padding-right: 0;
-    border: 10px solid;
-    border-color: #e74c3c;
-    margin: 30px;
-    border-radius: 15px;
-    color: black;
-    
-}
+
 
 .tit {
     display: flex;
-    background: #e74c3c;
-    padding: 10px; 
-    border: 0px solid;
-    border-color: #e74c3c;
-    border-radius: 10px;
-    margin: auto;
-    margin-left: 30px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 2rem;
-    align-items: center; 
+  grid-area: tit;
+  background: #e74c3c;
+  padding-left: 10px; 
+  border: 0px solid;
+  border-color: #e74c3c;
+  border-radius: 10px;
+  width: 30vw;
+  margin-left: 30px;
+  padding-top: 0px;
+  padding-bottom: 00px;
+  font-size: 2rem;
+  align-items: center; 
 }
 
 .art1{
@@ -192,7 +160,7 @@ nav a:hover{
     border-color: #e74c3c;
     margin: 30px;
     border-radius: 10px;
-    font-size: 2rem;
+    font-size: 1rem;
     
 }
 .img2{
@@ -233,7 +201,7 @@ nav a:hover{
     border-color: #e74c3c;
     margin: 30px;
     border-radius: 10px;
-    font-size: 2rem;
+    font-size: 1rem;
     
 }
 footer{
@@ -286,4 +254,141 @@ footer{
 }
 .knapp img{
     width: 50px;
+}
+
+.txt1{
+    grid-area: txt;
+    display: flex;
+    
+}
+.txt1 .textbubbla1 {
+    
+    position: relative;
+    display: inline-block;
+    border: 3px solid #e74c3c;
+    background-color: #e74c3c;
+    border-radius: 35px;
+    color: white;
+    margin-bottom:  auto;
+    margin-left: 13vw;
+    margin-top: 15vh;
+    padding: 10px;
+    font-size: 2rem;
+}
+  
+.txt1 .textbubbla1 .textbubblatext1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    opacity: 0;
+    width: 300px;
+    height: fit-content;
+    background-color: white;
+    color: black;
+    border: 5px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    padding: 5px;
+    padding-bottom: 10px;
+    position: absolute;
+    z-index: 1;
+    top: -90px;
+    left: -140%;
+    transition: opacity 0.3s ease-in-out; 
+    font-size: 1rem;
+}
+  
+.textbubbla1:hover .textbubblatext1 {
+    opacity: 1;
+}
+.txt2{
+    grid-area: txt;
+    display: flex;
+    
+}
+.txt2 .textbubbla2 {
+    
+    position: relative;
+    display: inline-block;
+    border: 3px solid #e74c3c;
+    background-color: #e74c3c;
+    border-radius: 35px;
+    color: white;
+    margin-bottom:  auto;
+    margin-left: 70vw;
+    margin-top: 23vh;
+    padding: 10px;
+    font-size: 3rem;
+}
+.txt2 .textbubbla2 .textbubblatext2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    opacity: 0;
+    width: 300px;
+    height: fit-content;
+    background-color: white;
+    color: black;
+    border: 5px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    padding: 5px;
+    padding-bottom: 10px;
+    position: absolute;
+    z-index: 1;
+    top: -85px;
+    left: -45%;
+    transition: opacity 0.3s ease-in-out; 
+    font-size: 1rem;
+  }
+  .textbubbla2:hover .textbubblatext2 {
+    opacity: 1;
+}
+
+
+.txt3{
+    grid-area: txt;
+    display: flex;
+    
+}
+.txt3 .textbubbla3 {
+    
+    position: relative;
+    display: inline-block;
+    border: 3px solid #e74c3c;
+    background-color: #e74c3c;
+    border-radius: 35px;
+    color: white;
+    margin-bottom:  auto;
+    margin-left: 30vw;
+    margin-top: 65vh;
+    padding: 10px;
+    font-size: 2.5rem;
+}
+.txt3 .textbubbla3 .textbubblatext3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    opacity: 0;
+    width: 300px;
+    height: fit-content;
+    background-color: white;
+    color: black;
+    border: 5px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    padding: 5px;
+    padding-bottom: 10px;
+    position: absolute;
+    z-index: 1;
+    top: -100px;
+    left: -13%;
+    transition: opacity 0.3s ease-in-out; 
+    font-size: 1rem;
+  }
+  .textbubbla3:hover .textbubblatext3 {
+    opacity: 1;
 }
